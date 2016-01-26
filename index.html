@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript"></script>
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="practice.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+            <!--main text font link below-->
+            <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+        
+            
+            
+        </script>
+    
+</head><a name="<$BlogItemNumber$"></a>
+
+
+
+
+ <div class="header-container">
+            <div class="header">
+                <h1>TruImaj</h1>
+                
+                
+               
+
+
+                
+                
+            </div>
+    
+    
+
+    <!--HEADER-->
+    <header class="mainheader">
+        <nav>
+             <ul>
+                <li><a href="index.php?page=home">home</a></li>
+                
+                   <li><a href="index.php?page=lifestyle">lifestyle</a>
+                        <ul>
+                            <li><a href="">fitness</a></li>
+                            <li><a href="">health</a></li>
+                            <li><a href="">inspiration</a></li>
+                            <li><a href="">travel</a></li>
+                        </ul>
+                   </li>  
+                   <li><a href="index.php?page=college">college</a>
+                        <ul>
+                            <li><a href="">planning</a></li>
+                            <li><a href="">stories</a></li>
+                            <li><a href="">teams</a></li>
+                            
+                        </ul>
+                   </li>  
+                <li><a href="index.php?page=beauty&style">beauty & style</a>
+                        <ul>
+                            <li><a href="">makeup</a></li>
+                            <li><a href="">fashion</a></li>
+                            <li><a href="">hair</a></li>
+                        </ul>
+                 </li>       
+                <li><a href="index.php?page=entertainment">entertainment</a>
+                        <ul>
+                            <li>celebrity</li>
+                            <li>music</li>
+                            <li>events</li>
+                            <li>exclusives</li>
+                 </li>           
+                        </ul>
+                        
+                 <li><a href="index.php?page=relationships">relationships</a>
+                        <ul>
+                            <li><a href="">love</a></li>
+                            <li><a href="">breakups</a></li>
+                            <li><a href="">sex</a></li>
+                            <li><a href="">dating</a></li>
+                            <li><a href="">family</a></li>
+                        </ul>
+                  </li>      
+                        
+               <li><a href="index.php?page=career">career</a>
+               <ul>
+                            <li><a href="">link</a></li>
+                            <li><a href="">money</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+               </li>
+                <li><a href="index.php?page=contact">contact</a>
+             <ul>
+                            <li><a href="">about</a></li>
+                            <li><a href="">inqueries</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        
+        
+        
+        
+    </header>
+   
+   
+    
+    
+
+
+<body class="body">
+    
+    
+    
+
+    
+    
+    
+      
+      
+            
+            
+        </div>
+           
+  
+    
+    
+<!--maincontent-->
+<div class="mainContent">
+    <div class="content">
+        
+        <?php
+            $p= $_GET['page'];
+            
+            switch($p) {
+                case"home":
+                    include('page/home.php');
+                break;
+            
+            case"lifestyle":
+                    include('page/lifestyle.php');
+                break;
+            
+            case"college":
+                    include('page/college.php');
+                break;
+            
+            case"beauty & style":
+                    include('page/beauty&style.php');
+                break;
+            
+            case"entertainment":
+                    include('page/entertainment.php');
+                break;
+            
+            case"relationships":
+                    include('page/relationships.php');
+                break;
+            
+            case"career":
+                    include('page/career.php');
+                break;
+            
+            case"contact":
+                    include('page/contact.php');
+                break;
+            
+            
+            
+            
+            
+                default:
+                    include('page/home.php');
+                break;    
+            
+            
+            }
+        
+        
+        
+        ?>
+        
+        
+        
+        
+        
+        <article class="topContent">
+                <head><h2><a href="" title="First Post">First Post</a></h2>
+                    <meta name="description" content="Here is a description of the applicable page">
+                </head>
+                <date>December 20, 2015</date>
+                <footer>
+                    <p class="post-info">This post is written by Imani Zhanel</p>
+                </footer>
+                
+                <content>
+                    
+                </content>
+                
+                
+                
+                
+                
+                
+                
+            </article>
+        
+        
+        
+        <article class="bottomContent">
+            
+             <header><h2><a href="" title="Second Post">Second Post</a></h2>
+                </header>
+                
+                <footer>
+                    <p class="post-info">This post is written by Imani Zhanel</p>
+                </footer>
+                
+                <content>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+
+ 
+</p>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+</p>
+                </content>
+            
+        </article>
+    </div>
+</div>
+    
+   
+   <!--RIGHT SIDEBAR-->
+   <div class="sideContent">
+    <aside class="top-sidebar">
+        <article>
+            <img src="file:///Users/imanideen/Documents/Website1/Imanietc/son082_phase1_300x250_a7rii_10.21.jpg" alt="HTML5 Icon" width="250" height="250">
+            
+            <br><br>
+            
+            
+            
+           <center>
+             <!--search box-->
+            <form method="get" action="http://www.truimaj.com/search.php"> 
+<table cellpadding="0px" cellspacing="0px"> 
+<tr> 
+<td style="border-style:solid none solid solid;border-color:#000000;border-width:1px;">
+<input type="text" name="zoom_query" style="width:100px; border:0px solid; height:30px; padding:0px 3px; position:relative;"> 
+</td>
+<td style="border-style:solid;border-color:#000000;border-width:1px;"> 
+<input type="submit" value="" style="border-style: none; background: url('file:///Users/imanideen/Documents/Website1/Imanietc/search-glass.png') no-repeat; width: 24px; height: 20px;">
+</td>
+</tr>
+</table>
+</form>
+   
+    </form>
+           </center>
+           <br><br>
+           
+           
+            
+            
+            
+            
+            
+           
+        </article>
+    </aside>
+    
+    
+    
+     <aside class="middle-sidebar">
+        <article>
+            <h2>stay connected</h2><br><br>
+            <center>
+                
+                <a class="twitter-timeline" href="https://twitter.com/truimaj" data-widget-id="678621257533923328">Tweets by @truimaj</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </center>
+        </article>
+    </aside>
+     
+     
+     
+     
+      <aside class="bottom-sidebar">
+        <article>
+            <h2>bottom sidebar</h2>
+           <!-- SnapWidget -->
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?h=aW1hanxpbnwxMjV8M3wzfHxub3w1fGZhZGVPdXR8b25TdGFydHx5ZXN8eWVz&ve=200715" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+
+        </article>
+    </aside>
+      
+   </div>
+
+<!--FOOTER-->
+
+        
+        
+  
+
+
+
+
+
+       
+
+
+</body>
+
+       
+
+
+<footer class="mainFooter">
+    
+     <p>Copyright © Imaj Online 2015, All Rights Reserved</p>
+    
+    
+</footer>
+      
+
+    
+</html>
